@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StockMarketGame.Repository.TestRepo;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +14,9 @@ namespace StockMarketGame
     /// </summary>
     public partial class App : Application
     {
+        private void InitializeRepository()
+        {
+            Repository.Repository.Intance.SetRepository(new TestRepository());
+        }
     }
 }
