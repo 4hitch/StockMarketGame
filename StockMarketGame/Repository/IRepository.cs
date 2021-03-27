@@ -5,6 +5,6 @@ namespace StockMarketGame.Repository
 {
     internal interface IRepository
     {
-        Task<decimal> GetRate(IIndex index);
+        Task<decimal> GetRate(IAddress address);
     }
 }

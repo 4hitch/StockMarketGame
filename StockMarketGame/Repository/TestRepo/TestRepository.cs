@@ -6,7 +6,7 @@ namespace StockMarketGame.Repository.TestRepo
 {
     internal class TestRepository : IRepository
     {
-        public Task<decimal> GetRate(IIndex index)
+        public Task<decimal> GetRate(IAddress address)
         {
             return new Task<decimal>(() =>
             {

@@ -24,6 +24,6 @@ namespace StockMarketGame.Repository
 
         public void SetRepository(IRepository repository) => RealRepository = repository;
 
-        public Task<decimal> GetRate(IIndex index) => RealRepository is null ? null : RealRepository.GetRate(index);
+        public Task<decimal> GetRate(IAddress address) => RealRepository is null ? null : RealRepository.GetRate(address);
     }
 }
