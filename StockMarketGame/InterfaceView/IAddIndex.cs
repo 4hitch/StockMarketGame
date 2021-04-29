@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Input;
 
 namespace StockMarketGame.InterfaceView
 {
-    interface ISystemPreview
+    interface IAddIndex
     {
         string Title { get; }
         string Header { get; }
 
-        string AddIndexContent { get; }
+        string IndexName { get; }
 
-        ICommand AddIndex { get; }
+        string IndexNameValue { get; set; }
     }
 }

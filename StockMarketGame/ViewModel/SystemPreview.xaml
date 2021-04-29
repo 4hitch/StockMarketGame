@@ -10,9 +10,19 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="9*"/>
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         <TextBlock  Text="{Binding Header}" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" />
-        
+        <DataGrid Grid.Row="1" Width="Auto">
+            
+        </DataGrid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="{Binding AddIndexContent}" Command="{Binding AddIndex }" Grid.Column="2" />
+        </Grid>
     </Grid>
 </Window>
